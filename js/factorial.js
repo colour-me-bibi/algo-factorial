@@ -9,7 +9,7 @@ const rFactorial = (num) => {
 
   const factorial = (num) => {
     if (num === 0) return 1;
-    if (cache[num]) return cache[num];
+    if (cache[num] !== undefined) return cache[num];
 
     const result = num * factorial(num - 1);
 
